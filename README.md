@@ -6,7 +6,7 @@
 fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi
 file configuration.*
 
-[!Note]
+[Note]
 > This fork is only intended for my use and my OS (Linux), so I don't consider how any of my changes will work for you
 > in your OS. The part of the README.md file that is talking about Windows or MacOS are left here in this file as I'm
 > not sure what is normal practise when forking.
