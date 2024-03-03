@@ -168,15 +168,18 @@ return {
 
 * What should I do if I already have a pre-existing neovim configuration?
   * You should back it up, then delete all files associated with it.
-  * This includes your existing init.lua and the neovim files in `~/.local` which can be deleted with `rm -rf ~/.local/share/nvim/`
+  * This includes your existing init.lua and the neovim files in `~/.local` which can be deleted with `rm -rf
+    ~/.local/share/nvim/`
 
 * Can I keep my existing configuration in parallel to kickstart?
   * Yes! You can use [NVIM_APPNAME](https://neovim.io/doc/user/starting.html#%24NVIM_APPNAME)`=nvim-NAME` to maintain
     multiple configurations. For example you can install the kickstart configuration in `~/.config/nvim-kickstart` and
     create an alias:
+
     ```
     alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
     ```
+
     When you run Neovim using `nvim-kickstart` alias it will use the alternative config directory and the matching local
     directory `~/.local/share/nvim-kickstart`. You can apply this approach to any Neovim distribution that you would
     like to try out.
@@ -210,21 +213,23 @@ This requires:
 - Install CMake, and the Microsoft C++ Build Tools on Windows
 
 ```lua
-{'nvim-telescope/telescope-fzf-native.nvim', build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build' }
+{
+  'nvim-telescope/telescope-fzf-native.nvim',
+  build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
+}
 ```
 
-Alternatively one can install gcc and make which don't require changing the config,
-the easiest way is to use choco:
+Alternatively one can install gcc and make which don't require changing the config, the easiest way is to use choco:
 
-1. install [chocolatey](https://chocolatey.org/install)
-either follow the instructions on the page or use winget,
-run in cmd as **admin**:
+1. install [chocolatey](https://chocolatey.org/install) either follow the instructions on the page or use winget, run in
+   cmd as **admin**:
+
 ```
 winget install --accept-source-agreements chocolatey.chocolatey
 ```
 
-2. install all requirements using choco, exit previous cmd and
-open a new one so that choco path is set, run in cmd as **admin**:
+2. install all requirements using choco, exit previous cmd and open a new one so that choco path is set, run in cmd as
+   **admin**:
 ```
 choco install -y neovim git ripgrep wget fd unzip gzip mingw make
 ```
