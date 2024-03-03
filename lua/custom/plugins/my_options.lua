@@ -74,5 +74,10 @@ vim.cmd [[
   autocmd BufWinLeave *.* mkview!
   autocmd BufWinenter *.* silent! loadview
 ]]
+--
+-- Change a few settings for filetype `markdown`
+vim.cmd [[
+  autocmd FileType markdown set textwidth=120|set colorcolumn=121
+]]
 
 return {}
