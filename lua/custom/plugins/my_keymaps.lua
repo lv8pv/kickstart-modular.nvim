@@ -76,3 +76,5 @@ return {
   keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts),
   keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts),
 }
+--
+-- vim: ts=4 sts=4 sw=4 et

@@ -71,13 +71,14 @@ vim.cmd 'set whichwrap+=<,>,[,],h,l'
 vim.cmd 'set iskeyword+=-'
 vim.cmd 'set formatoptions-=cro' -- TODO: this doesn't seem to work
 vim.cmd [[ 
-  autocmd BufWinLeave *.* mkview!
-  autocmd BufWinenter *.* silent! loadview
+    autocmd BufWinLeave *.* mkview!
+    autocmd BufWinenter *.* silent! loadview
 ]]
 --
 -- Change a few settings for filetype `markdown`
 vim.cmd [[
-  autocmd FileType markdown set textwidth=120|set colorcolumn=121
+    autocmd FileType markdown set textwidth=120|set colorcolumn=121
 ]]
 
 return {}
+-- vim: ts=4 sts=4 sw=4 et
