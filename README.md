@@ -6,7 +6,7 @@
 fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi
 file configuration.*
 
-**[!NOTE]**
+> **[!NOTE]**  
 > This fork is only intended for my use and my OS (Linux), I don't consider how any of my changes will work for you in
 > your OS. The part of the README.md file that is talking about Windows or MacOS are left here in this file as I'm not
 > sure what is normal practise when forking.
@@ -30,7 +30,7 @@ make sure you have the latest versions.
 
 ### Install External Dependencies
 
-**[!NOTE]** 
+> **[!NOTE]**  
 > [Backup](#FAQ) your previous configuration (if any exists)
 
 External Requirements:
@@ -41,7 +41,7 @@ External Requirements:
   - If want to write Golang, you will need `go`
   - etc.
 
-**[!NOTE]**
+> **[!NOTE]**  
 > See [Windows Installation](#Windows-Installation) to double check any additional Windows notes
 
 Neovim's configurations are located under the following paths, depending on your OS:
@@ -102,7 +102,7 @@ init.lua is outdated, please follow the install instructions in this file instea
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo (so that you have your own copy that you
 can modify) and then installing you can install to your machine using the methods above.
 
-> **NOTE**  
+> **[!NOTE]**  
 > Your fork's url will be something like this: `https://github.com/<your_github_username>/kickstart-modular.nvim.git`
 
 #### Examples of adding popularly requested plugins
@@ -170,11 +170,15 @@ return {
   * You should back it up, then delete all files associated with it.
   * This includes your existing init.lua and the neovim files in `~/.local` which can be deleted with `rm -rf ~/.local/share/nvim/`
 * Can I keep my existing configuration in parallel to kickstart?
-  * Yes! You can use [NVIM_APPNAME](https://neovim.io/doc/user/starting.html#%24NVIM_APPNAME)`=nvim-NAME` to maintain multiple configurations. For example you can install the kickstart configuration in `~/.config/nvim-kickstart` and create an alias:
+  * Yes! You can use [NVIM_APPNAME](https://neovim.io/doc/user/starting.html#%24NVIM_APPNAME)`=nvim-NAME` to maintain
+    multiple configurations. For example you can install the kickstart configuration in `~/.config/nvim-kickstart` and
+    create an alias:
     ```
     alias nvim-kickstart='NVIM_APPNAME="nvim-kickstart" nvim'
     ```
-    When you run Neovim using `nvim-kickstart` alias it will use the alternative config directory and the matching local directory `~/.local/share/nvim-kickstart`. You can apply this approach to any Neovim distribution that you would like to try out.
+    When you run Neovim using `nvim-kickstart` alias it will use the alternative config directory and the matching local
+    directory `~/.local/share/nvim-kickstart`. You can apply this approach to any Neovim distribution that you would
+    like to try out.
 * What if I want to "uninstall" this configuration:
   * See [lazy.nvim uninstall](https://github.com/folke/lazy.nvim#-uninstalling) information
 * Why is the kickstart `init.lua` a single file? Wouldn't it make sense to split it into multiple files?
