@@ -11,6 +11,16 @@ file configuration.*
 > your OS. The part of the README.md file that is talking about Windows or MacOS are left here in this file as I'm not
 > sure what is normal practise when forking.
 
+## More about this fork.
+This fork respects the files from [dam9000/kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim)
+and make no changes to those files with **ONE EXCEPTION*. I have *enabled* `{ import = 'custom.plugins' },` (the last
+line) in `lua/lazy-plugins.lua` so that we can add our own plugins and settings in `lua/custom/plugins/`
+
+Each of the added files in `lua/custom/plugins/` have comments that will explain what I have added or changed.
+
+---
+
+# kickstart.modular.nvim
 A starting point for Neovim that is:
 
 * Small
