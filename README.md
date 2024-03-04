@@ -48,7 +48,7 @@ make sure you have the latest versions.
 ### Install External Dependencies
 
 
-> [!NOTE]
+> [!TIP]
 > [Backup](#FAQ) your previous configuration (if any exists)
 
 External Requirements:
