@@ -32,8 +32,11 @@ return {
       end
       -- ADDED MY THIS FORK
       require('mini.tabline').setup()
-      -- ... and there is more!
-      --  Check out: https://github.com/echasnovski/mini.nvim
+      --
+      --
+      -- Check out: https://github.com/echasnovski/mini.nvim
+      -- Move visual selection in Visual mode. Defaults are Alt + hjkl.
+      require('mini.move').setup()
     end,
   },
 }
