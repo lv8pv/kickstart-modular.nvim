@@ -1,4 +1,5 @@
 -- This adds autopairs plugin (https://github.com/windwp/nvim-autopairs)
+
 return {
   'windwp/nvim-autopairs',
   -- Optional dependency
@@ -11,4 +12,3 @@ return {
     cmp.event:on('confirm_done', cmp_autopairs.on_confirm_done())
   end,
 }
--- vim: ts=4 sts=4 sw=4 et
