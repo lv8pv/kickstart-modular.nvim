@@ -116,11 +116,10 @@ Read through the `init.lua` file in your configuration folder for more informati
 See [Effective Neovim: Instant IDE](https://youtu.be/stqUbv-5u2s), covering the previous version. Note: The install via
 init.lua is outdated, please follow the install instructions in this file instead. An updated video is coming soon.
 
-### Recommended Steps
 
-[Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo (so that you have your own copy that you
-can modify) and then installing you can install to your machine using the methods above.
-
+> [!TIP]
+> [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo (so that you have your own copy that
+> you can modify) and then installing you can install to your machine using the methods above.
 
 > [!NOTE]
 > Your fork's url will be something like this: `https://github.com/<your_github_username>/kickstart-modular.nvim.git`
