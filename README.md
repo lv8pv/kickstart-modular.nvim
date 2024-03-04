@@ -18,6 +18,13 @@ repo as possible. Though there are a few changes
 
 Each of the added files in `lua/custom/plugins/` have comments that will explain what I have added or changed.
 
+## Plugins added in this fork
+The following plugins have been added to *kickstarter-modular* in this fork.
+* pwindwp/nvim-autopairs
+* akinsho/toggleterm.nvim
+* echasnovski/mini.tabline
+* echasnovski/mini.move
+
 ---
 
 # kickstart.modular.nvim
