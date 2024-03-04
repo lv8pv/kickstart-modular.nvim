@@ -47,7 +47,8 @@ make sure you have the latest versions.
 
 ### Install External Dependencies
 
-> **[!NOTE]**  
+
+> [!NOTE]
 > [Backup](#FAQ) your previous configuration (if any exists)
 
 External Requirements:
@@ -58,7 +59,8 @@ External Requirements:
   - If want to write Golang, you will need `go`
   - etc.
 
-> **[!NOTE]**  
+
+> [!NOTE]
 > See [Windows Installation](#Windows-Installation) to double check any additional Windows notes
 
 Neovim's configurations are located under the following paths, depending on your OS:
@@ -119,7 +121,8 @@ init.lua is outdated, please follow the install instructions in this file instea
 [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo (so that you have your own copy that you
 can modify) and then installing you can install to your machine using the methods above.
 
-> **[!NOTE]**  
+
+> [!NOTE]
 > Your fork's url will be something like this: `https://github.com/<your_github_username>/kickstart-modular.nvim.git`
 
 #### Examples of adding popularly requested plugins
