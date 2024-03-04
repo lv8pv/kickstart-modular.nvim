@@ -128,8 +128,8 @@ init.lua is outdated, please follow the install instructions in this file instea
 
 #### Examples of adding popularly requested plugins
 
-> [!NOTE] You'll need to uncomment the following line at the bottom of the file `lua/lazy-plugins.lua`, that turns on
-> loading custom plugins.
+You'll need to uncomment the following line at the bottom of the file `lua/lazy-plugins.lua`, that turns on loading
+custom plugins.
 
 ```lua
 -- uncomment this line
