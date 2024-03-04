@@ -20,10 +20,10 @@ Each of the added files in `lua/custom/plugins/` have comments that will explain
 
 ## Plugins added in this fork
 The following plugins have been added to *kickstarter-modular* in this fork.
-* pwindwp/nvim-autopairs
-* akinsho/toggleterm.nvim
-* echasnovski/mini.tabline
-* echasnovski/mini.move
+* [nvim-autopairs](https://github.com/pwindwp/nvim-autopairs)
+* [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
+* [mini.tabline](https://github.com/echasnovski/mini.tabline)
+* [mini.move](https://github.com/echasnovski/mini.move)
 
 ---
 
