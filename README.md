@@ -124,9 +124,17 @@ init.lua is outdated, please follow the install instructions in this file instea
 > [!NOTE]
 > Your fork's url will be something like this: `https://github.com/<your_github_username>/kickstart-modular.nvim.git`
 
+---
+
 #### Examples of adding popularly requested plugins
 
-NOTE: You'll need to uncomment the line in the init.lua that turns on loading custom plugins.
+> [!NOTE] You'll need to uncomment the following line at the bottom of the file `lua/lazy-plugins.lua`, that turns on
+> loading custom plugins.
+
+```lua
+-- uncomment this line
+{ import = 'custom.plugins' },
+```
 
 <details>
   <summary>Adding autopairs</summary>
