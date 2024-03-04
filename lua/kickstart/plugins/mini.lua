@@ -30,13 +30,6 @@ return {
       statusline.section_location = function()
         return ''
       end
-      -- ADDED MY THIS FORK
-      require('mini.tabline').setup()
-      --
-      --
-      -- Check out: https://github.com/echasnovski/mini.nvim
-      -- Move visual selection in Visual mode. Defaults are Alt + hjkl.
-      require('mini.move').setup()
     end,
   },
 }
