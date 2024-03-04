@@ -1,7 +1,7 @@
--- Addin tottleterm plugin from
+-- Adding toggleterm plugin from:
 -- https://github.com/akinsho/toggleterm.nvim
 
--- This are so that we can navigate from terminal window
+-- Add bindings for easy navigating from term window back to other windows
 function _G.set_terminal_keymaps()
   local opts = { buffer = 0 }
   vim.keymap.set('t', '<esc>', [[<C-\><C-n>]], opts)
@@ -13,7 +13,7 @@ function _G.set_terminal_keymaps()
   -- vim.keymap.set('t', '<C-w>', [[<C-\><C-n><C-w>]], opts)
 end
 
--- if you only want these mappings for toggle term use term://*toggleterm#* instead
+-- Bindings only active in term://*
 vim.cmd 'autocmd! TermOpen term://* lua set_terminal_keymaps()'
 
 return {
