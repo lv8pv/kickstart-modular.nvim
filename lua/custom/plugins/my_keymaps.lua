@@ -64,17 +64,19 @@ return {
   -- Stay in indent mode
   keymap('v', '<', '<gv', opts),
   keymap('v', '>', '>gv', opts),
+
+  -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE
   -- Move text up and down
-  keymap('v', '<A-j>', ':m .+1<CR>==', opts),
-  keymap('v', '<A-k>', ':m .-2<CR>==', opts),
-  keymap('v', 'p', '"_dP', opts),
+  -- keymap('v', '<A-j>', ':m .+1<CR>==', opts),
+  -- keymap('v', '<A-k>', ':m .-2<CR>==', opts),
+  -- keymap('v', 'p', '"_dP', opts),
 
   -- Visual Block --
   -- Move text up and down
-  keymap('x', 'J', ":move '>+1<CR>gv-gv", opts),
-  keymap('x', 'K', ":move '<-2<CR>gv-gv", opts),
-  keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts),
-  keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts),
+  -- keymap('x', 'J', ":move '>+1<CR>gv-gv", opts),
+  -- keymap('x', 'K', ":move '<-2<CR>gv-gv", opts),
+  -- keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts),
+  -- keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts),
 }
 --
--- vim: ts=4 sts=4 sw=4 et
+-- vim: ts=2 sts=2 sw=2 et
