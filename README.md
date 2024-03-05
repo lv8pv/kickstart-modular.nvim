@@ -255,7 +255,7 @@ This requires:
 }
 ```
 
-Alternatively one can install gcc and make which don't require changing the config, the easiest way is to use choco:
+hAlternatively one can install gcc and make which don't require changing the config, the easiest way is to use choco:
 
 1. install [chocolatey](https://chocolatey.org/install) either follow the instructions on the page or use winget, run in
    cmd as **admin**:
@@ -272,5 +272,8 @@ choco install -y neovim git ripgrep wget fd unzip gzip mingw make
 
 Then continue with the [Install Kickstart](#Install-Kickstart) step.
 
+---
+
+The line under are for vim see:  `:h modeline` for more info
 -- vim: ts=4 sts=4 sw=4 tw=120 cc=121 spell et
 
