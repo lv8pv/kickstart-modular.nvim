@@ -120,7 +120,7 @@ nvim
 
 > [!NOTE]
 > First time starting `nvim` will give an `Mason` error. This is nothing to worry about. It only happens when starting
-> nvim the first time. I has something do do with trying to set options while the Mason window is open. I will try to
+> nvim the first time. It has something do do with trying to set options while the Mason window is open. I will try to
 > fix this, but so far don't know how.
 
 That's it! Lazy will install all the plugins you have. Use `:Lazy` to view current plugin status.
