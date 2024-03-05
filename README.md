@@ -274,6 +274,6 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 
 ---
 
-The line under are for vim see:  `:h modeline` for more info
+The line under are for vim see:  `:h modeline` for more info  
 -- vim: ts=4 sts=4 sw=4 tw=120 cc=121 spell et
 
