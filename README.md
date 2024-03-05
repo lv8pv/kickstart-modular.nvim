@@ -14,9 +14,18 @@ file configuration.*
 ## More about this fork.
 This fork try to respects the files from
 [dam9000/kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim) with as few changes to the original
-repo as possible. Though there are a few changes
+repo as possible. So far the only change to the original forked files is that I have uncommented the last part of the
+file `lua/laszy-plugins.lua`:
 
-Each of the added files in `lua/custom/plugins/` have comments that will explain what I have added or changed.
+```lua
+-- Uncomment this 
+{ import = 'custom.plugins' },
+```
+
+All changes and additions to the original repos are done by adding files to the `lua/custom/pluggins/` directory. Where
+all files there have comments that explain what I have added and why. By doing changes like this, I'm hoping that
+eventual updates to the original repo can be as it promises never to change anything in the `lua/custom/pluggins/`
+directory.
 
 ## Plugins added in this fork
 The following plugins have been added to *kickstarter-modular* in this fork.
