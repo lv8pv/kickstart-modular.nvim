@@ -58,7 +58,6 @@ make sure you have the latest versions.
 
 ### Install External Dependencies
 
-
 > [!TIP]
 > [Backup](#FAQ) your previous configuration (if any exists)
 
@@ -129,9 +128,7 @@ Read through the `init.lua` file in your configuration folder for more informati
 
 ### Getting Started
 
-See [Effective Neovim: Instant IDE](https://youtu.be/stqUbv-5u2s), covering the previous version. Note: The install via
-init.lua is outdated, please follow the install instructions in this file instead. An updated video is coming soon.
-
+[The Only Video You Need to Get Started with Neovim](https://youtu.be/m8C0Cq9Uv9o)
 
 > [!TIP]
 > [Fork](https://docs.github.com/en/get-started/quickstart/fork-a-repo) this repo (so that you have your own copy that
@@ -283,4 +280,3 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 
 The line under are for vim see:  `:h modeline` for more info  
 -- vim: ts=4 sts=4 sw=4 tw=120 cc=121 spell et
-
