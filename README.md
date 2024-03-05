@@ -25,7 +25,7 @@ file `lua/laszy-plugins.lua`:
 All my changes in this repos are done by only adding files to the `lua/custom/pluggins/` directory. Where all files
 there have comments that explain what I have added and why.
 
-By doing changes like this, I'm hoping that when an updates to the original repo I forked. Could easily be added to this
+By doing changes like this, I'm hoping that when an updates to the original repo occurs. We could easily add it to this
 fork and only disturbing files we have not changed. This because it is promised in the documentation that changes are
 never to change anything in the `lua/custom/pluggins/` directory.
 
@@ -51,7 +51,7 @@ A starting point for Neovim that is:
 
 ### Install Neovim
 
-Kickstart.nvim targets *only* the latest
+Kickstart-modular.nvim targets *only* the latest
 ['stable'](https://github.com/neovim/neovim/releases/tag/stable) and latest
 ['nightly'](https://github.com/neovim/neovim/releases/tag/nightly) of Neovim. If you are experiencing issues, please
 make sure you have the latest versions.
@@ -117,6 +117,11 @@ Start Neovim
 ```sh
 nvim
 ```
+
+> [!NOTE]
+> First time starting `nvim` will give an `Mason` error. This is nothing to worry about. It only happens when starting
+> nvim the first time. I has something do do with trying to set options while the Mason window is open. I will try to
+> fix this, but so far don't know how.
 
 That's it! Lazy will install all the plugins you have. Use `:Lazy` to view current plugin status.
 
