@@ -22,10 +22,12 @@ file `lua/laszy-plugins.lua`:
 { import = 'custom.plugins' },
 ```
 
-All changes and additions to the original repos are done by adding files to the `lua/custom/pluggins/` directory. Where
-all files there have comments that explain what I have added and why. By doing changes like this, I'm hoping that
-eventual updates to the original repo can be as it promises never to change anything in the `lua/custom/pluggins/`
-directory.
+All my changes in this repos are done by only adding files to the `lua/custom/pluggins/` directory. Where all files
+there have comments that explain what I have added and why.
+
+By doing changes like this, I'm hoping that when an updates to the original repo I forked. Could easily be added to this
+fork and only disturbing files we have not changed. This because it is promised in the documentation that changes are
+never to change anything in the `lua/custom/pluggins/` directory.
 
 ## Plugins added in this fork
 The following plugins have been added to *kickstarter-modular* in this fork.
