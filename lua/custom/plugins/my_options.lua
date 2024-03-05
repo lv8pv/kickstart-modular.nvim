@@ -105,7 +105,7 @@ vim.cmd [[
 vim.cmd [[
     augroup help_as_buffer
       autocmd!
-      autocmd FileType help :tabnew % | tabprevious | quit | tabnext 
+      autocmd FileType help :tabnew % | tabprevious | quit | tabnext
       autocmd FileType help set buflisted
     augroup END
 ]]
