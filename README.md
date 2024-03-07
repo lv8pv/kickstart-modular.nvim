@@ -1,10 +1,8 @@
 # kickstart-modular.nvim
 
 ## Introduction
-
-*This is a fork of [dam9000/kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim) that again is a
-fork of [nvim-lua/kickstart.nvim](https://github.com/nvim-lua/kickstart.nvim) that moves from a single file to a multi
-file configuration.*
+*This is a fork of [dam9000/kickstart-modular.nvim][1] that again is a fork of [nvim-lua/kickstart.nvim][2] that moves
+from a single file to a multi file configuration.*
 
 > [!NOTE]
 > This fork is only intended for my use and my OS (Linux), I don't consider how any of my changes will work for you in
@@ -12,15 +10,13 @@ file configuration.*
 > sure what is normal practise when forking.
 
 ## More about this fork.
-This fork try to respects the files from
-[dam9000/kickstart-modular.nvim](https://github.com/dam9000/kickstart-modular.nvim) with as few changes to the original
-repo as possible. So far the only change to the original forked files is that I have uncommented the last part of the
-file `lua/laszy-plugins.lua`:
+This fork try to respects the *up-stream* files [dam9000/kickstart-modular.nvim][1] with as few changes from the
+original repo as possible. But there are a few. Current changes from the *up-stream* files are: 
+* FILE *lua/lazy.plugin.lua
+  * Uncommented the line { import = 'custom.plugins' },
+* FILE init.lua
+  * Changed vim.g.have_nerd_font = true (from `false` to `true`)
 
-```lua
--- Uncomment this 
-{ import = 'custom.plugins' },
-```
 
 All my changes in this repos are done by only adding files to the `lua/custom/pluggins/` directory. Where all files
 there have comments that explain what I have added and why.
@@ -31,10 +27,10 @@ never to change anything in the `lua/custom/pluggins/` directory.
 
 ## Plugins added in this fork
 The following plugins have been added to *kickstarter-modular* in this fork.
-* [nvim-autopairs](https://github.com/pwindwp/nvim-autopairs)
-* [toggleterm.nvim](https://github.com/akinsho/toggleterm.nvim)
-* [mini.tabline](https://github.com/echasnovski/mini.tabline)
-* [mini.move](https://github.com/echasnovski/mini.move)
+* [nvim-autopairs][3]
+* [toggleterm.nvim][4]
+* [mini.tabline][5]
+* [mini.move][6]
 
 ---
 
@@ -281,4 +277,12 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 ---
 
 The line under are for vim see:  `:h modeline` for more info  
--- vim: ts=4 sts=4 sw=4 tw=120 cc=121 spell et
+
+[1]: https://github.com/dam9000/kickstart-modular.nvim
+[2]: https://github.com/dam9000/kickstart-modular.nvim
+[3]: https://github.com/pwindwp/nvim-autopairs
+[4]: https://github.com/akinsho/toggleterm.nvim
+[5]: https://github.com/echasnovski/mini.tabline
+[6]: https://github.com/echasnovski/mini.move
+
+-- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et
