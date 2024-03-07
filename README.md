@@ -12,7 +12,7 @@ from a single file to a multi file configuration.*
 ## More about this fork.
 This fork try to respects the *up-stream* files [dam9000/kickstart-modular.nvim][1] with as few changes from the
 original repo as possible. But there are a few. Current changes from the *up-stream* files are: 
-* FILE *lua/lazy.plugin.lua
+* FILE lua/lazy.plugin.lua
   * Uncommented the line { import = 'custom.plugins' },
 * FILE init.lua
   * Changed vim.g.have_nerd_font = true (from `false` to `true`)
