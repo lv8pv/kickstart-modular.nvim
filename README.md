@@ -16,7 +16,7 @@ original repo as possible. But there are a few.
 
 ###  Current changes from the *up-stream* files are: 
 * **FILE** *lua/lazy.plugin.lua*
-  * Uncommented the line `{ import = 'custom.plugins' },`
+  * Added `require` code for each of plugin and file added in *lua/custom/plugins/*
 * **FILE** *init.lua*
   * Changed `vim.g.have_nerd_font = true` (from `false` to `true`)
 * **FILE** *lua/kickstart/plugins/cmp.lua*
