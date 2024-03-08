@@ -49,6 +49,8 @@ vim.opt.virtualedit = 'block'
 -- Same as scrolloff but for the sides. Only useful when `nowrap`is set
 vim.opt.sidescrolloff = 0
 
+-- vim.opt.helpheight = 99999
+
 -- These are set in the main `lua/options.lua`
 -- number = true,               -- set numbered lines
 -- mouse = "a",                 -- allow the mouse to be used in neovim
@@ -89,27 +91,10 @@ vim.cmd [[
     autocmd BufWinenter *.* silent! loadview
 ]]
 --
--- Change a few settings for filetype `markdown`
--- -- I reconsidered and came to the conclusion that I prefer 79 and 80 for
--- -- everything on my terminal. It is only for .md files that are going to
--- -- github I need 120 and 121. For those files I use `-- vim modline` in
--- -- the specific files I need it. I left the code in here commented out if
--- -- someone else need it
--- --
--- vim.cmd [[
---     autocmd FileType markdown set textwidth=120|set colorcolumn=121
--- ]]
-
--- Added so that `:help` files opens in a new full height buffer.
--- You can navigate between buffers using `shift + h|l` or `,` (in normal mode)
-vim.cmd [[
-    augroup help_as_buffer
-      autocmd!
-      autocmd FileType help :tabnew % | tabprevious | quit | tabnext
-      autocmd FileType help set buflisted
-    augroup END
-]]
-
+-- Open help in new window tab
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'help' },
+  command = 'wincmd T',
+})
 return {}
-
--- vim: ts=2 sts=2 sw=2 spell et
+-- vim: ts=2:sts=2:sw=2:spell et
