@@ -1,3 +1,6 @@
+-- Nice colorcheme team  from:
+-- https://github.com/navarasu/onedark.nvim
+-- Config:
 -- Taken from https://github.com/saphorous/kickstart-modular.nvim and replaces
 return {
   -- Theme inspired by Atom
