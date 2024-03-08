@@ -1,3 +1,6 @@
+-- A nice little file explorer from:
+-- https://github.com/nvim-tree/nvim-tree.lua
+-- This kickstart have bound the key <leader>t to open and close it.
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
 

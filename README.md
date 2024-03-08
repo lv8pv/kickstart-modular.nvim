@@ -43,6 +43,7 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [szw/vim-maximizer][7]
 * [navarasu/onedark.nvim][8]
 * [nvim-treesitter/nvim-treesitter-textobjects][9]
+* [nvim-tree/nvim-tree.lua][11]
 
 ---
 
@@ -299,7 +300,9 @@ The line under are for vim see:  `:h modeline` for more info
 [7]: https://github.com/szw/vim-maximizer
 [8]: https://github.com/navarasu/onedark.nvim
 [9]: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
-[10]:https://github.com/saphorous/kickstart-modular.nvim
+[10]: https://github.com/saphorous/kickstart-modular.nvim
+[11]: https://github.com/nvim-tree/nvim-tree.lua
+
 
 
 -- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et
