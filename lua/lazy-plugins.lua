@@ -22,8 +22,9 @@ require('lazy').setup({
   --  This is equivalent to:
   --    require('Comment').setup({})
 
+  --  -- Tthis is moved to custom/plugins/comment.lua
   -- "gc" to comment visual regions/lines
-  { 'numToStr/Comment.nvim', opts = {} },
+  -- 'numToStr/Comment.nvim', opts = {} },
 
   -- modular approach: using `require 'path/name'` will
   -- include a plugin definition from file lua/path/name.lua
@@ -40,14 +41,33 @@ require('lazy').setup({
 
   require 'kickstart/plugins/cmp',
 
-  require 'kickstart/plugins/tokyonight',
-
+  -- Use ONLY one of these.
+  -- require 'kickstart/plugins/tokyonight',
+  require 'custom/plugins/onedark',
+  --
+  --
   require 'kickstart/plugins/todo-comments',
 
   require 'kickstart/plugins/mini',
 
   require 'kickstart/plugins/treesitter',
 
+  -- Add a require to the plugins needed by this lv8pv/kickstart-modular.nvim
+  -- and those files you add to custome/plugins/ your self.
+  require 'custom/plugins/init',
+  require 'custom/plugins/cmp',
+  require 'custom/plugins/mini',
+  require 'custom/plugins/nvim-tree',
+  require 'custom/plugins/toggleterm',
+  require 'custom/plugins/vim-maximizer',
+  require 'custom/plugins/autopairs',
+  require 'custom/plugins/comment',
+  require 'custom/plugins/nvim-treesitter',
+  require 'custom/plugins/nvim-treesitter-textobjects',
+  require 'custom/plugins/my_options',
+  require 'custom/plugins/my_keymaps',
+  --
+  --
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
   -- init.lua. If you want these files, they are in the repository, so you can just download them and
   -- put them in the right spots if you want.
@@ -65,7 +85,7 @@ require('lazy').setup({
   --
   --  Uncomment the following line and add your plugins to `lua/custom/plugins/*.lua` to get going.
   --    For additional information, see `:help lazy.nvim-lazy.nvim-structuring-your-plugins`
-  { import = 'custom.plugins' },
+  -- { import = 'custom.plugins' },
 }, {
   ui = {
     -- If you have a Nerd Font, set icons to an empty table which will use the
