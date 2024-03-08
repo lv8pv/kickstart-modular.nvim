@@ -2,7 +2,8 @@
 
 ## Introduction
 *This is a fork of [dam9000/kickstart-modular.nvim][1] that again is a fork of [nvim-lua/kickstart.nvim][2] that moves
-from a single file to a multi file configuration.*
+from a single file to a multi file configuration.* Some of the changes in this fork are based on files found at
+[saphorous/kickstart-modular.nvim][10]
 
 > [!NOTE]
 > This fork is only intended for my use and my OS (Linux), I don't consider how any of my changes will work for you in
@@ -19,7 +20,11 @@ original repo as possible. But there are a few.
 * **FILE** *init.lua*
   * Changed `vim.g.have_nerd_font = true` (from `false` to `true`)
 * **FILE** *lua/kickstart/plugins/cmp.lua*
-  * Uncommented the line 'rafamadriz/friendly-snippets,'.
+  * This file is commented out completely and configuration is moved to lua/custom/plugins/cmp.lua
+* **FILE** *lua/kickstart/plugins/mini.lua*
+  * This file is commented out completely and configuration is moved to lua/custom/plugins/mini.lua
+* **FILE** *lua/kickstart/plugins/treesitter.lua*
+  * This file is commented out completely and configuration is moved to lua/custom/plugins/nvim-treesitter.lua
 
 
 All my changes in this repos are done by only adding files to the `lua/custom/pluggins/` directory. Where all files
@@ -35,6 +40,9 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [toggleterm.nvim][4]
 * [mini.tabline][5]
 * [mini.move][6]
+* [szw/vim-maximizer][7]
+* [navarasu/onedark.nvim][8]
+* [nvim-treesitter/nvim-treesitter-textobjects][9]
 
 ---
 
@@ -288,5 +296,10 @@ The line under are for vim see:  `:h modeline` for more info
 [4]: https://github.com/akinsho/toggleterm.nvim
 [5]: https://github.com/echasnovski/mini.tabline
 [6]: https://github.com/echasnovski/mini.move
+[7]: https://github.com/szw/vim-maximizer
+[8]: https://github.com/navarasu/onedark.nvim
+[9]: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+[10]:https://github.com/saphorous/kickstart-modular.nvim
+
 
 -- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et
