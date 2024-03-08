@@ -65,6 +65,9 @@ return {
   keymap('v', '<', '<gv', opts),
   keymap('v', '>', '>gv', opts),
 
+  -- Open and close nvim-tree
+  keymap('n', '<leader>t', ':NvimTreeToggle<CR>', opts),
+
   -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE
   -- Move text up and down
   -- keymap('v', '<A-j>', ':m .+1<CR>==', opts),
