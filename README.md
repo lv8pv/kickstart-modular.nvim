@@ -18,6 +18,8 @@ original repo as possible. But there are a few.
   * Uncommented the line `{ import = 'custom.plugins' },`
 * **FILE** *init.lua*
   * Changed `vim.g.have_nerd_font = true` (from `false` to `true`)
+* **FILE** *lua/kickstart/plugins/cmp.lua*
+  * Uncommented the line 'rafamadriz/friendly-snippets,'.
 
 
 All my changes in this repos are done by only adding files to the `lua/custom/pluggins/` directory. Where all files
