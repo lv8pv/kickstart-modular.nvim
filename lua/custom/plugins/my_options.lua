@@ -35,11 +35,11 @@ vim.opt.expandtab = true
 -- the number of spaces inserted for each indentation
 vim.opt.shiftwidth = 0
 -- insert 4 spaces for a tab
-vim.opt.tabstop = 4
+vim.opt.tabstop = 2
 -- set relative numbered lines
 vim.opt.relativenumber = true
 -- set number column width to 2 {default 4}
-vim.opt.numberwidth = 4
+vim.opt.numberwidth = 2
 -- display lines as one long line
 vim.opt.wrap = false
 -- the font used in graphical neovim applications
