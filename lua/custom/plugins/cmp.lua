@@ -20,7 +20,7 @@ return {
     local cmp = require 'cmp'
     local luasnip = require 'luasnip'
     local lspkind = require 'lspkind'
-
+    require('luasnip').filetype_extend('htmldjango', { 'html' })
     -- loads vscode style snippets from installed plugins (e.g. friendly-snippets)
     require('luasnip.loaders.from_vscode').lazy_load()
     luasnip.config.setup {}
