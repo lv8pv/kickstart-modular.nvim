@@ -13,17 +13,24 @@ local keymap = vim.keymap.set
 --   command_mode = "c",
 
 return {
+  -- Norwegian (possible more) keyboard layouts have the `}` and `{` at so
+  -- useless places (we need to press AltGr + 7 and 0) That is very  award  for
+  -- the fingers, specially if you have to do it often. And when you are
+  -- jumping between paragraphs it is easier to have it bound to ctrl + , and .
+  keymap('n', '<C-,>', '}', opts),
+  keymap('n', '<C-.>', '{', opts),
   -- Hide search highlight by pressing enter
   -- This is set in `lua/keymaps.lua` and is set to <Esc>
   -- keymap("n", "<CR>", ":noh<CR><CR>"),
   -- Open my vim cheat_sheet
-  keymap('n', '<leader>+', ':edit /home/lv8pv/doc/apps/nvim/cheat_sheet.txt<CR>', opts),
+  -- -- NOTE: Change this to your own cheat_sheet file or comment it out
+  keymap('n', '<leader>+', ':edit /home/lv8pv/doc/apps/nvim/cheat_sheet.txt<CR>', { desc = 'Open cheat_sheet.txt - Help for your nvim' }, opts),
 
   -- Dont know what this do yet...
   keymap('n', '<C-c>', 'dt', opts),
 
   -- gf will open filename under cursor or create it
-  keymap('n', 'gf', ':edit <cfile><CR>', opts),
+  keymap('n', 'gf', ':edit <cfile><CR>', { desc = 'Open/Create file under cursor' }, opts),
 
   -- Open and close nvim-tree
   -- keymap("n", "<leader>t", ":NvimTreeToggle<CR>", opts),
@@ -71,12 +78,11 @@ return {
 
   keymap('n', '<leader>ff', 'ggVGgq', { desc = 'Format entire file using gq' }),
 
-  -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE
+  -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE - Kept for future reference.
   -- Move text up and down
   -- keymap('v', '<A-j>', ':m .+1<CR>==', opts),
   -- keymap('v', '<A-k>', ':m .-2<CR>==', opts),
   -- keymap('v', 'p', '"_dP', opts),
-
   -- Visual Block --
   -- Move text up and down
   -- keymap('x', 'J', ":move '>+1<CR>gv-gv", opts),
