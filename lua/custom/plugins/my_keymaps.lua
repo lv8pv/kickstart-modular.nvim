@@ -35,10 +35,11 @@ return {
   -- keymap("n", "<leader>v", ":vs<CR>",opts),
 
   -- Better window navigation
-  keymap('n', '<C-h>', '<C-w>h', opts),
-  keymap('n', '<C-j>', '<C-w>j', opts),
-  keymap('n', '<C-k>', '<C-w>k', opts),
-  keymap('n', '<C-l>', '<C-w>l', opts),
+  -- These are set in `lua/keymaps.lua`
+  -- keymap('n', '<C-h>', '<C-w><C-h>', opts),
+  -- keymap('n', '<C-j>', '<C-w><C-j>', opts),
+  -- keymap('n', '<C-k>', '<C-w><C-k>', opts),
+  -- keymap('n', '<C-l>', '<C-w><C-l>', opts),
 
   -- navigate tabs
   keymap('n', '<SC-l>', ':tabnext<CR>', opts),
@@ -70,11 +71,6 @@ return {
 
   keymap('n', '<leader>ff', 'ggVGgq', { desc = 'Format entire file using gq' }),
 
-  -- Diagnostic keymaps
-  keymap('n', '[d', vim.diagnostic.goto_prev, { desc = 'Go to previous diagnostic message' }),
-  keymap('n', ']d', vim.diagnostic.goto_next, { desc = 'Go to next diagnostic message' }),
-  keymap('n', '<leader>e', vim.diagnostic.open_float, { desc = 'Open floating diagnostic message' }),
-  keymap('n', '<leader>q', vim.diagnostic.setloclist, { desc = 'Open diagnostics list' }),
   -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE
   -- Move text up and down
   -- keymap('v', '<A-j>', ':m .+1<CR>==', opts),
