@@ -40,14 +40,23 @@ return {
   -- keymap("n", "<leader>n", ":vnew<CR>", opts),
   -- vertical splitt current buffer
   -- keymap("n", "<leader>v", ":vs<CR>",opts),
-
-  -- Better window navigation
-  -- These are set in `lua/keymaps.lua`
-  -- keymap('n', '<C-h>', '<C-w><C-h>', opts),
-  -- keymap('n', '<C-j>', '<C-w><C-j>', opts),
-  -- keymap('n', '<C-k>', '<C-w><C-k>', opts),
-  -- keymap('n', '<C-l>', '<C-w><C-l>', opts),
-
+  --
+  --
+  -- BETTER WINDOW, BUFFER & TABS navigation
+  --
+  -- -- WINDOWS
+  -- -- Ctrl + (hjkl) Navigate between Windows
+  --
+  -- -- BUFFER
+  -- -- Shift + (hl) Next and Previous buffer
+  --
+  -- -- TABS
+  -- -- Ctrl + Shift + (lh) Next and Previous Tab
+  keymap('n', '<C-h>', '<C-w>h', opts),
+  keymap('n', '<C-j>', '<C-w>j', opts),
+  keymap('n', '<C-k>', '<C-w>k', opts),
+  keymap('n', '<C-l>', '<C-w>l', opts),
+  --
   -- navigate tabs
   keymap('n', '<SC-l>', ':tabnext<CR>', opts),
   keymap('n', '<SC-h>', ':tabprevious<CR>', opts),
@@ -61,8 +70,6 @@ return {
   -- :buffers             -- List buffers
   -- :b#nr                -- Go to buffer with nr
   --
-  -- Next buffer (and around)
-  -- keymap("n", ".", ":bnext<CR>", opts),
   -- Close buffer
   keymap('n', '<leader>bc', ':bd<CR>', opts),
   keymap('n', '<leader>bw', ':write<CR>', opts),
