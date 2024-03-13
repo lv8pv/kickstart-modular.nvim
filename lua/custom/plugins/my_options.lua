@@ -96,5 +96,11 @@ vim.api.nvim_create_autocmd('FileType', {
   pattern = { 'help' },
   command = 'wincmd T',
 })
+
+vim.api.nvim_create_autocmd('FileType', {
+  pattern = { 'gitcommit' },
+  command = 'set spell',
+})
+-- gitcommit
 return {}
 -- vim: ts=2:sts=2:sw=2:spell et
