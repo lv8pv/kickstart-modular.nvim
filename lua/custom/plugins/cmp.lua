@@ -64,15 +64,20 @@ return {
         --   behavior = cmp.ConfirmBehavior.Replace,
         --   select = true,
         -- },
-        ['<Tab>'] = cmp.mapping(function(fallback)
-          if cmp.visible() then
-            cmp.select_next_item()
-          elseif luasnip.expand_or_locally_jumpable() then
-            luasnip.expand_or_jump()
-          else
-            fallback()
-          end
-        end, { 'i', 's' }),
+        -- LV8PV 2024-03-13
+        -- REMOVED TO TEST IF THIS IS WHAT MAKE TAB SELECT FROM SUGGESTIONS WHEN
+        -- I JUST WANT TO TAB OUT. AFTER FIRST TEST IT SEEMS TO FIX THE PROBLEM,
+        -- BUT NEED TO CHECK IF THERE ARE CONSEQUENCES OTHER PLACES...
+        -- ['<Tab>'] = cmp.mapping(function(fallback)
+        --   if cmp.visible() then
+        --     cmp.select_next_item()
+        --   elseif luasnip.expand_or_locally_jumpable() then
+        --     luasnip.expand_or_jump()
+        --   else
+        --     fallback()
+        --   end
+        -- end, { 'i', 's' }),
+        --  LV8PV/
         ['<C-l>'] = cmp.mapping(function(fallback)
           if cmp.visible() then
             cmp.select_prev_item()
