@@ -1,29 +1,16 @@
 -- Taken from https://github.com/saphorous/kickstart-modular.nvim and replaces
 -- the kickstart/plugins/treesitter.lua
 return {
-  -- Highlight, edit, and navigate code
-  'nvim-treesitter/nvim-treesitter',
-  build = ':TSUpdate',
-  dependencies = {
-    'nvim-treesitter/nvim-treesitter-textobjects',
-  },
-  config = function()
-    -- import nvim-treesitter plugin
-    local treesitter = require 'nvim-treesitter.configs'
-
-    -- configure treesitter
-    treesitter.setup {
-      -- You can specify additional Treesitter modules here: -- For example: -- playground = {--enable = true,-- },
-      modules = {},
-
-      -- enable syntax highlighting
-      highlight = { enable = true },
-
-      -- List of parsers to ignore installing
+  {
+    -- Highlight, edit, and navigate code
+    'nvim-treesitter/nvim-treesitter',
+    build = ':TSUpdate',
+    dependencies = {
+      'nvim-treesitter/nvim-treesitter-textobjects',
+    },
+    opts = {
+      -- Autoinstall languages that are not installed
       ignore_install = {},
-
-      -- enable indentation
-      indent = { enable = true },
 
       -- Autoinstall languages that are not installed. Defaults to false (but you can change for yourself!)
       auto_install = false,
@@ -33,6 +20,14 @@ return {
 
       -- Install languages synchronously (only applied to `ensure_installed`)
       sync_install = false,
+      highlight = {
+        enable = true,
+        -- Some languages depend on vim's regex highlighting system (such as Ruby) for indent rules.
+        --  If you are experiencing weird indenting issues, add the language to
+        --  the list of additional_vim_regex_highlighting and disabled languages for indent.
+        additional_vim_regex_highlighting = { 'ruby' },
+      },
+      indent = { enable = true, disable = { 'ruby' } },
 
       -- ensure these language parsers are installed
       ensure_installed = {
@@ -67,12 +62,22 @@ return {
           scope_incremental = false,
           node_decremental = '<bs>',
         },
+        modules = {},
       },
-    }
+    },
+    config = function(_, opts)
+      -- [[ Configure Treesitter ]] See `:help nvim-treesitter`
 
-    -- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
-    -- This is not working, not sure why yet -- lv8pv
-    -- require('ts_context_commentstring').setup {}
-  end,
+      ---@diagnostic disable-next-line: missing-fields
+      require('nvim-treesitter.configs').setup(opts)
+
+      -- There are additional nvim-treesitter modules that you can use to interact
+      -- with nvim-treesitter. You should go explore a few and see what interests you:
+      --
+      --    - Incremental selection: Included, see `:help nvim-treesitter-incremental-selection-mod`
+      --    - Show your current context: https://github.com/nvim-treesitter/nvim-treesitter-context
+      --    - Treesitter + textobjects: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
+    end,
+  },
 }
 -- vim: ts=2 sts=2 sw=2 et
