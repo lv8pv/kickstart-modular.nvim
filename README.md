@@ -16,7 +16,9 @@ original repo as possible. But there are a few.
 
 ###  Current changes from the *up-stream* files are: 
 * **FILE** *lua/lazy.plugin.lua*
-  * Added `require` code for each of plugin and file added in *lua/custom/plugins/*
+  * Added `require` code for each of plugins and file added in *lua/custom/plugins/*
+  * Commented OUT require tokyonight
+  * Commented IN require indent_line
 * **FILE** *init.lua*
   * Changed `vim.g.have_nerd_font = true` (from `false` to `true`)
 * **FILE** *lua/kickstart/plugins/cmp.lua*
@@ -44,6 +46,7 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [navarasu/onedark.nvim][8]
 * [nvim-treesitter/nvim-treesitter-textobjects][9]
 * [nvim-tree/nvim-tree.lua][11]
+* [theprimeagen/harpoon][12]
 
 ---
 
@@ -347,6 +350,7 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 [9]: https://github.com/nvim-treesitter/nvim-treesitter-textobjects
 [10]: https://github.com/saphorous/kickstart-modular.nvim
 [11]: https://github.com/nvim-tree/nvim-tree.lua
+[12]: https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 
 The line under are for vim see:  `:h modeline` for more info  
 -- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et
