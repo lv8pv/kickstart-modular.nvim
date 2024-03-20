@@ -80,9 +80,9 @@ External Requirements:
     - If want to write Golang, you will need `go`
     - etc.
 
-
 > [!NOTE]
-> See [Windows Installation](#Windows-Installation) to double check any additional Windows notes
+> See [Install Recipes](#Install-Recipes) for additional Windows and Linux specific notes
+> and quick install snippets
 
 Neovim's configurations are located under the following paths, depending on your OS:
 
@@ -196,6 +196,8 @@ This will install the tree plugin and add the command `:Neotree` for you. For mo
 In the file: `lua/custom/plugins/filetree.lua`, add:
 
 ```lua
+-- File: lua/custom/plugins/filetree.lua
+
 return {
   "nvim-neo-tree/neo-tree.nvim",
   version = "*",
@@ -249,8 +251,15 @@ return {
         * [Restructure the configuration](https://github.com/nvim-lua/kickstart.nvim/issues/218)
         * [Reorganize init.lua into a multi-file setup](https://github.com/nvim-lua/kickstart.nvim/pull/473)
 
-### Windows Installation
+### Install Recipes
 
+Below you can find OS specific install instructions for Neovim and dependencies.
+
+After installing all the dependencies continue with the [Install Kickstart](#Install-Kickstart) step.
+
+#### Windows Installation
+
+<details><summary>Windows with Microsoft C++ Build Tools and CMake</summary>
 Installation may require installing build tools and updating the run command for `telescope-fzf-native`
 
 See `telescope-fzf-native` documentation for [more details](https://github.com/nvim-telescope/telescope-fzf-native.nvim#installation)
@@ -265,8 +274,9 @@ This requires:
   build = 'cmake -S. -Bbuild -DCMAKE_BUILD_TYPE=Release && cmake --build build --config Release && cmake --install build --prefix build'
 }
 ```
-
-Alternatively one can install gcc and make which don't require changing the config, the easiest way is to use choco:
+</details>
+<details><summary>Windows with gcc/make using chocolatey</summary>
+Alternatively, one can install gcc and make which don't require changing the config, the easiest way is to use choco:
 
 1. install [chocolatey](https://chocolatey.org/install) either follow the instructions on the page or use winget, run in
    cmd as **admin**:
@@ -280,6 +290,43 @@ winget install --accept-source-agreements chocolatey.chocolatey
 ```
 choco install -y neovim git ripgrep wget fd unzip gzip mingw make
 ```
+</details>
+<details><summary>WSL (Windows Subsystem for Linux)</summary>
+
+```
+wsl --install
+wsl
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip neovim
+```
+</details>
+
+#### Linux Install
+<details><summary>Ubuntu Install Steps</summary>
+
+```
+sudo add-apt-repository ppa:neovim-ppa/unstable -y
+sudo apt update
+sudo apt install make gcc ripgrep unzip neovim
+```
+</details>
+<details><summary>Debian Install Steps</summary>
+
+```
+sudo apt update
+sudo apt install make gcc ripgrep unzip git
+echo "deb https://deb.debian.org/debian unstable main" | sudo tee -a /etc/apt/sources.list
+sudo apt update
+sudo apt install -t unstable neovim
+```
+</details>
+<details><summary>Fedora Install Steps</summary>
+
+```
+sudo dnf install -y gcc make git ripgrep fd-find neovim
+```
+</details>
 
 Then continue with the [Install Kickstart](#Install-Kickstart) step.
 
