@@ -39,7 +39,8 @@ require('lazy').setup({
 
   require 'kickstart/plugins/conform',
 
-  require 'kickstart/plugins/cmp',
+  require 'custom/plugins/cmp',
+  -- require 'kickstart/plugins/cmp',
 
   -- Use ONLY one of these.
   -- require 'kickstart/plugins/tokyonight',
@@ -48,21 +49,20 @@ require('lazy').setup({
   --
   require 'kickstart/plugins/todo-comments',
 
-  require 'kickstart/plugins/mini',
+  -- require 'kickstart/plugins/mini',
+  require 'custom/plugins/mini',
 
-  require 'kickstart/plugins/treesitter',
+  -- require 'kickstart/plugins/treesitter',
+  require 'custom/plugins/nvim-treesitter',
 
   -- Add a require to the plugins needed by this lv8pv/kickstart-modular.nvim
   -- and those files you add to custome/plugins/ your self.
   require 'custom/plugins/init',
-  require 'custom/plugins/cmp',
-  require 'custom/plugins/mini',
   require 'custom/plugins/nvim-tree',
   require 'custom/plugins/toggleterm',
   require 'custom/plugins/vim-maximizer',
   require 'custom/plugins/autopairs',
   require 'custom/plugins/comment',
-  require 'custom/plugins/nvim-treesitter',
   require 'custom/plugins/nvim-treesitter-textobjects',
   require 'custom/plugins/my_options',
   require 'custom/plugins/my_keymaps',
