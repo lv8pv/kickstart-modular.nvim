@@ -27,6 +27,8 @@ original repo as possible. But there are a few.
   * This file is commented out completely and configuration is moved to lua/custom/plugins/mini.lua
 * **FILE** *lua/kickstart/plugins/treesitter.lua*
   * This file is commented out completely and configuration is moved to lua/custom/plugins/nvim-treesitter.lua
+* **FILE** *lua/kickstart/plugins/nvim-telescope.lue*
+  * Added extra key binding for find_files
 
 
 All my changes in this repos are done by only adding files to the `lua/custom/pluggins/` directory. Where all files
