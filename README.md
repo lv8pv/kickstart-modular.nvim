@@ -45,11 +45,14 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [mini.tabline][5]
 * [mini.move][6]
 * [szw/vim-maximizer][7]
-* [navarasu/onedark.nvim][8]
 * [nvim-treesitter/nvim-treesitter-textobjects][9]
 * [nvim-tree/nvim-tree.lua][11]
 * [theprimeagen/harpoon][12]
 * [NvChad/nvim-colorizer][13]
+* Colour Themes
+  * [navarasu/onedark.nvim][8]
+  * [EdenEast/nightfox][14]
+
 
 ---
 
@@ -355,5 +358,5 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 [11]: https://github.com/nvim-tree/nvim-tree.lua
 [12]: https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 [13]: https://github.com/NvChad/nvim-colorizer.lua
-
+[14]: https://github.com/EdenEast/nightfox.nvim
 <!-- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et -->
