@@ -32,9 +32,6 @@ return {
   -- gf will open filename under cursor or create it
   keymap('n', 'gf', ':edit <cfile><CR>', { desc = 'Open/Create file under cursor' }, opts),
 
-  -- Open and close nvim-tree
-  -- keymap("n", "<leader>t", ":NvimTreeToggle<CR>", opts),
-
   -- New empty Vertical split
   -- I think I will try to learn to just use :vnew and :vs before adding this again
   -- keymap("n", "<leader>n", ":vnew<CR>", opts),
@@ -43,26 +40,23 @@ return {
   --
   --
   -- BETTER WINDOW, BUFFER & TABS navigation
-  --
   -- -- WINDOWS
   -- -- Ctrl + (hjkl) Navigate between Windows
-  --
-  -- -- BUFFER
-  -- -- Shift + (hl) Next and Previous buffer
-  --
-  -- -- TABS
-  -- -- Ctrl + Shift + (lh) Next and Previous Tab
   keymap('n', '<C-h>', '<C-w>h', opts),
   keymap('n', '<C-j>', '<C-w>j', opts),
   keymap('n', '<C-k>', '<C-w>k', opts),
   keymap('n', '<C-l>', '<C-w>l', opts),
   --
   -- navigate tabs
+  -- -- TABS
+  -- -- Ctrl + Shift + (lh) Next and Previous Tab
   keymap('n', '<SC-l>', ':tabnext<CR>', opts),
   keymap('n', '<SC-h>', ':tabprevious<CR>', opts),
 
   -- BUFFERS
   -- Navigate buffers
+  -- -- BUFFER
+  -- -- Shift + (hl) Next and Previous buffer
   keymap('n', '<S-l>', ':bnext<CR>', opts), -- Also :bn
   keymap('n', '<S-h>', ':bprevious<CR>', opts), -- Also :bp
   keymap('n', ',', ':e#<CR>', opts), -- Previous buffer
@@ -85,23 +79,25 @@ return {
 
   keymap('n', '<leader>ff', 'ggVGgq', { desc = 'Format entire file using gq' }),
 
-  -- Rebind halfscreen down so that it keeps cursoer in the middle of the
-  -- screen
+  -- Rebind halfscreen down so that it keeps cursoer in the middle of the screen
   keymap('n', '<C-d>', '<C-d>zz', { desc = 'Remap C-d so it keeps cursor in the middle of the window' }, opts),
   keymap('n', '<C-u>', '<C-u>zz', { desc = 'Remap C-u so it keeps cursor in the middle of the window' }, opts),
 
   -- A way to paste from yank registry with out losing it from the registry
   keymap('x', '<leader>p', '"_dP', { desc = 'Paste from register with out losing register' }, opts),
 
-  -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE - Kept for future reference.
+  -- Keep cursor where it is when joining lines behind
+  keymap('n', 'J', 'mzJ`z', { desc = 'Keep cursor where it is when Joining lines' }, opts),
+
   -- Move text up and down
+  -- Visual Block -- I like this better then Alt + J that mini.move use
+  keymap('x', 'J', ":move '>+1<CR>gv-gv", opts, { desc = 'Move visual selected block Down' }, opts),
+  keymap('x', 'K', ":move '<-2<CR>gv-gv", opts, { desc = 'Move visual selected block Up' }, opts),
+  -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE - Kept for future reference.
   -- keymap('v', '<A-j>', ':m .+1<CR>==', opts),
   -- keymap('v', '<A-k>', ':m .-2<CR>==', opts),
   -- keymap('v', 'p', '"_dP', opts),
-  -- Visual Block --
   -- Move text up and down
-  -- keymap('x', 'J', ":move '>+1<CR>gv-gv", opts),
-  -- keymap('x', 'K', ":move '<-2<CR>gv-gv", opts),
   -- keymap('x', '<A-j>', ":move '>+1<CR>gv-gv", opts),
   -- keymap('x', '<A-k>', ":move '<-2<CR>gv-gv", opts),
 }
