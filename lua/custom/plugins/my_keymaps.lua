@@ -87,10 +87,11 @@ return {
 
   -- Rebind halfscreen down so that it keeps cursoer in the middle of the
   -- screen
-  -- TODO: This sould be set to nnoremap, but unsure how to do this in lua,
-  -- unless this is one of the things `opts` actually do...
   keymap('n', '<C-d>', '<C-d>zz', { desc = 'Remap C-d so it keeps cursor in the middle of the window' }, opts),
   keymap('n', '<C-u>', '<C-u>zz', { desc = 'Remap C-u so it keeps cursor in the middle of the window' }, opts),
+
+  -- A way to paste from yank registry with out losing it from the registry
+  keymap('x', '<leader>p', '"_dP', { desc = 'Paste from register with out losing register' }, opts),
 
   -- REMOVED AND REPLACED BY PLUGIN MINI.MOVE - Kept for future reference.
   -- Move text up and down
