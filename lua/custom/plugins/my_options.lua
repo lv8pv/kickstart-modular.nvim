@@ -44,6 +44,8 @@ vim.opt.numberwidth = 2
 vim.opt.wrap = false
 -- the font used in graphical neovim applications
 vim.opt.guifont = 'monospace:h17'
+-- set fat cursor
+vim.opt.guicursor = ''
 -- Change visual block mode to virtual edit mode
 vim.opt.virtualedit = 'block'
 -- Same as scrolloff but for the sides. Only useful when `nowrap`is set
