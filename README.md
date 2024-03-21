@@ -49,6 +49,7 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [nvim-treesitter/nvim-treesitter-textobjects][9]
 * [nvim-tree/nvim-tree.lua][11]
 * [theprimeagen/harpoon][12]
+* [NvChad/nvim-colorizer][13]
 
 ---
 
@@ -353,6 +354,6 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 [10]: https://github.com/saphorous/kickstart-modular.nvim
 [11]: https://github.com/nvim-tree/nvim-tree.lua
 [12]: https://github.com/ThePrimeagen/harpoon/tree/harpoon2
+[13]: https://github.com/NvChad/nvim-colorizer.lua
 
-The line under are for vim see:  `:h modeline` for more info  
--- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et
+<!-- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et -->

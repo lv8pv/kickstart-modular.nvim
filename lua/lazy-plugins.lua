@@ -67,6 +67,7 @@ require('lazy').setup({
   require 'custom/plugins/my_options',
   require 'custom/plugins/my_keymaps',
   require 'custom/plugins/harpoon2',
+  require 'custom/plugins/colorizer',
   --
   --
   -- The following two comments only work if you have downloaded the kickstart repo, not just copy pasted the
