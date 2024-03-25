@@ -50,6 +50,7 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [nvim-tree/nvim-tree.lua][11]
 * [theprimeagen/harpoon][12]
 * [NvChad/nvim-colorizer][13]
+* [iamcco/markdown-preview][16]
 * Colour Themes
   * [navarasu/onedark.nvim][8]
   * [EdenEast/nightfox][14]
@@ -367,5 +368,5 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 [13]: https://github.com/NvChad/nvim-colorizer.lua
 [14]: https://github.com/EdenEast/nightfox.nvim
 [15]: https://github.com/catppuccin/nvim
+[16]: https://github.com/iamcco/markdown-preview.nvim
 
-<!-- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et -->
