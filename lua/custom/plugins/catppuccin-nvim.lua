@@ -13,7 +13,7 @@ return {
             colored_indent_levels = false,
           },
           mason = true,
-          native_lsp = { enable = true },
+          native_lsp = { enabled = true },
           notify = true,
           telescope = true,
           nvimtree = true,
@@ -23,12 +23,15 @@ return {
             enabled = true,
             indentscope_color = '',
           },
-          -- For more plugins integrations please scroll down (https://github.com/catppuccin/nvim#integrations)
         },
       }
-
       -- setup must be called before loading
       vim.cmd.colorscheme 'catppuccin-macchiato'
+
+      -- I don't think this is needed now, but leave it here in case it is.
+      -- for _, group in ipairs(vim.fn.getcompletion('@lsp', 'highlight')) do
+      --   vim.api.nvim_set_hl(0, group, {})
+      -- end
     end,
   },
 }
