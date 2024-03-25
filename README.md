@@ -41,6 +41,7 @@ never to change anything in the `lua/custom/pluggins/` directory.
 ## Plugins added in this fork
 The following plugins have been added to *kickstarter-modular* in this fork.
 * [nvim-autopairs][3]
+  * Added but not active. If you want this, uncomment the line requiring autopairs in lazy-plugins.lua
 * [toggleterm.nvim][4]
 * [mini.tabline][5]
 * [mini.move][6]
