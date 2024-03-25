@@ -52,6 +52,7 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * Colour Themes
   * [navarasu/onedark.nvim][8]
   * [EdenEast/nightfox][14]
+  * [catppuccin/nvim][15]
 
 
 ---
@@ -364,4 +365,6 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 [12]: https://github.com/ThePrimeagen/harpoon/tree/harpoon2
 [13]: https://github.com/NvChad/nvim-colorizer.lua
 [14]: https://github.com/EdenEast/nightfox.nvim
+[15]: https://github.com/catppuccin/nvim
+
 <!-- vim: ts=2 sts=2 sw=2 tw=120 cc=120 spell et -->
