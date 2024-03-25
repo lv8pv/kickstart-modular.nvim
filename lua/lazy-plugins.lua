@@ -52,7 +52,7 @@ require('lazy').setup({
   -- require 'custom/plugins/nightfox',
   require 'custom/plugins/catppuccin-nvim',
   -- -----------------------------------------
-  --
+
   require 'kickstart/plugins/todo-comments',
 
   -- require 'kickstart/plugins/mini',
@@ -67,7 +67,11 @@ require('lazy').setup({
   require 'custom/plugins/nvim-tree',
   require 'custom/plugins/toggleterm',
   require 'custom/plugins/vim-maximizer',
-  require 'custom/plugins/autopairs',
+
+  -- I'm struggling with this plugin. I just feel that having autopairs active
+  -- make more problems then it solves. It is here if you want it. All you have
+  -- to do is to uncomment the line under.
+  -- require 'custom/plugins/autopairs',
   require 'custom/plugins/comment',
   require 'custom/plugins/nvim-treesitter-textobjects',
   require 'custom/plugins/my_options',
