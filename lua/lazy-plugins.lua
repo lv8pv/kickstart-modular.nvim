@@ -43,12 +43,15 @@ require('lazy').setup({
   require 'custom/plugins/cmp',
   -- require 'kickstart/plugins/cmp',
 
-  -- There are 3 different color themes with many different styles for you to
-  -- chose from. Use ONLY one of these.
+  -- There are 4 different color themes with many different styles for you to
+  -- chose from.
+  -- -- Use ONLY 1 of these 4
+  -- -----------------------------------------
   -- require 'kickstart/plugins/tokyonight',
   -- require 'custom/plugins/onedark',
-  require 'custom/plugins/nightfox',
-  --
+  -- require 'custom/plugins/nightfox',
+  require 'custom/plugins/catppuccin-nvim',
+  -- -----------------------------------------
   --
   require 'kickstart/plugins/todo-comments',
 
