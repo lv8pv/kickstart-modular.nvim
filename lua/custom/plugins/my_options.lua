@@ -51,6 +51,12 @@ vim.opt.virtualedit = 'block'
 -- Same as scrolloff but for the sides. Only useful when `nowrap`is set
 vim.opt.sidescrolloff = 0
 
+-- Some folding binds.
+vim.g.foldclose = '0'
+vim.opt.foldlevel = 99
+vim.opt.foldlevelstart = 99
+vim.opt.foldenable = true
+
 -- vim.opt.helpheight = 99999
 
 -- These are set in the main `lua/options.lua`
