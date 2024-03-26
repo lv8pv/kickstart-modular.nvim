@@ -1,3 +1,10 @@
+-- https://github.com/catppuccin/nvim
+-- Nice colour scheme with a lot of options and integrations. This config is
+-- based on a config by this YT user>
+-- https://www.youtube.com/watch?v=oo_I5lAmdi0
+--
+-- This colour scheme have several flavors to chose from: `catppuccin-latte`,
+-- `catppuccin-frappe`, `catppuccin-macchiato` and `catppuccin-mocha`
 return {
   {
     'catppuccin/nvim',
@@ -8,9 +15,9 @@ return {
           gitsigns = true,
           harpoon = true,
           indent_blankline = {
-            enabled = false,
+            enabled = true,
             scope_color = 'sapphire',
-            colored_indent_levels = false,
+            colored_indent_levels = true,
           },
           mason = true,
           native_lsp = { enabled = true },
@@ -25,13 +32,9 @@ return {
           },
         },
       }
-      -- setup must be called before loading
+      -- Flavors to chose from: `catppuccin-latte`, `catppuccin-frappe`,
+      -- `catppuccin-macchiato` and `catppuccin-mocha`
       vim.cmd.colorscheme 'catppuccin-macchiato'
-
-      -- I don't think this is needed now, but leave it here in case it is.
-      -- for _, group in ipairs(vim.fn.getcompletion('@lsp', 'highlight')) do
-      --   vim.api.nvim_set_hl(0, group, {})
-      -- end
     end,
   },
 }
