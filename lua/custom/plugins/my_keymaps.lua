@@ -24,7 +24,9 @@ return {
   -- keymap("n", "<CR>", ":noh<CR><CR>"),
   -- Open my vim cheat_sheet
   -- -- NOTE: Change this to your own cheat_sheet file or comment it out
-  keymap('n', '<leader>+', ':edit /home/lv8pv/doc/apps/nvim/cheat_sheet.txt<CR>', { desc = 'Open cheat_sheet.txt - Help for your nvim' }, opts),
+  keymap('n', '<leader>=', ':edit /home/lv8pv/doc/sysadm/apps/nvim/cheat_sheet.txt<CR>', {
+    desc = 'Open cheat_sheet.txt - Help for your nvim',
+  }, opts),
 
   -- Dont know what this do yet...
   keymap('n', '<C-c>', 'dt', opts),
