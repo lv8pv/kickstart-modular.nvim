@@ -51,6 +51,7 @@ The following plugins have been added to *kickstarter-modular* in this fork.
 * [theprimeagen/harpoon][12]
 * [NvChad/nvim-colorizer][13]
 * [iamcco/markdown-preview][16]
+* [windwp/nvim-ts-autotag][17]
 * Colour Themes
   * [navarasu/onedark.nvim][8]
   * [EdenEast/nightfox][14]
@@ -369,4 +370,5 @@ Then continue with the [Install Kickstart](#Install-Kickstart) step.
 [14]: https://github.com/EdenEast/nightfox.nvim
 [15]: https://github.com/catppuccin/nvim
 [16]: https://github.com/iamcco/markdown-preview.nvim
+[17]: https://github.com/windwp/nvim-ts-autotag
 
