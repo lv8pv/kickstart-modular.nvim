@@ -99,10 +99,14 @@ vim.cmd [[
     autocmd BufWinenter *.* silent! loadview
 ]]
 --
--- Open help in new window tab
+-- Open help in new vertical split at full height.
 vim.api.nvim_create_autocmd('FileType', {
-  pattern = { 'help' },
-  command = 'wincmd T',
+  pattern = 'help',
+  callback = function()
+    vim.bo.bufhidden = 'unload'
+    vim.cmd.wincmd 'L'
+    vim.cmd 'vertical resize 81'
+  end,
 })
 
 vim.api.nvim_create_autocmd('FileType', {
