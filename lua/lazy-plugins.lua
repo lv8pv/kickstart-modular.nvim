@@ -79,6 +79,7 @@ require('lazy').setup({
   require 'custom/plugins/harpoon2',
   require 'custom/plugins/colorizer',
   require 'custom/plugins/markdown-preview',
+  require 'custom/plugins/nvim-ts-autotag',
   --
   --
   -- The following two comments only work if you have downloaded the kickstart
